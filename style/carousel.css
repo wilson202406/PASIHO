@@ -142,19 +142,16 @@ h2 {
 
 table {
   border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 th {
-  background-color: #f2f2f2;
-
+  background-color: #4CAF50;
+  color: white;
 }
+
 /* 
   .navbar  {
     background-color: #b3c4ae !important;
