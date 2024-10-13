@@ -224,10 +224,7 @@ th {
     }
 }
 /* Estilos responsive: Ocultar columnas en pantallas pequeñas */
-
-@media (min-width: 768px) {
-  /* Estilos para pantallas de 768px o más */
-  body {
-      background-color: #fff;
-  }
+/* Diseño para PC */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }
