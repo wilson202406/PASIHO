@@ -1,7 +1,7 @@
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Evita el envío del formulario por defecto
+    event.preventDefault();
 
     // Obtén los datos del formulario
     const name = document.getElementById('name').value;
@@ -15,15 +15,8 @@ form.addEventListener('submit', (event) => {
         message: message
     };
 
-    // Aquí es donde se enviaría el correo
-    // Utilizando un servicio como SendGrid, Mailgun o la API de Gmail
-    // Ejemplos:
-    // - Enviar con SendGrid: https://docs.sendgrid.com/api-reference/mail-send
-    // - Enviar con Mailgun: https://documentation.mailgun.com/en/latest/api-intro.html
-
-    // Ejemplo básico (no funcional sin configuración):
-    const url = 'https://api.example.com/dannasofiacp12@gmail.com'; // Reemplaza con tu URL
-    fetch(url, {
+    // Envío del correo (reemplaza con tu configuración real)
+    fetch('https://api.example.com/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -32,9 +25,9 @@ form.addEventListener('submit', (event) => {
     })
     .then(response => {
         if (response.ok) {
-            alert('Mensaje enviado correctamente');
-            window.location.href = 'https://wilson202406.github.io/PASIHO/'; // Reemplaza con la URL de tu página de contacto
-            form.reset();
+            // Mensaje de éxito y redirección
+            alert('¡Mensaje enviado correctamente!');
+            window.location.href = 'https://tupaginaweb.com/contacto'; // Reemplaza con la URL de tu página de contacto
         } else {
             alert('Error al enviar el mensaje');
         }
