@@ -9,12 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Obtén los datos del formulario
                 const name = document.getElementById('name').value;
+                const celular = document.getElementById('celular').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
 
                 // Crea un objeto con los datos
                 const data = {
                     name: name,
+                    email: celular,
                     email: email,
                     message: message
                 };
@@ -55,3 +57,4 @@ document.addEventListener('DOMContentLoaded', () => {
         //console.error('El elemento con ID "contactForm" no se encontró.');
     }
 });
+
