@@ -228,3 +228,15 @@ th {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     
 }
+
+/*Celular*/
+@media screen and (max-width: 375px) {
+  .header{
+      left: 30px;
+      top: 20px;
+ }
+
+  body {
+      overflow-x: hidden;
+  }
+}
