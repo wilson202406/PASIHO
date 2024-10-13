@@ -224,14 +224,10 @@ th {
     }
 }
 /* Estilos responsive: Ocultar columnas en pantallas pequeñas */
-@media (max-width: 768px) {
-  table th:nth-child(4),
-  table td:nth-child(4) {
-    display: none; /* Oculta la cuarta columna (Teléfono) */
-  }
 
-  table th:nth-child(6),
-  table td:nth-child(6) {
-    display: none; /* Oculta la sexta columna (Especialidad) */
+@media (min-width: 768px) {
+  /* Estilos para pantallas de 768px o más */
+  body {
+      background-color: #fff;
   }
 }
