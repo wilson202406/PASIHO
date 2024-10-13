@@ -29,11 +29,3 @@ SI: Sin
 HO: Hogar
 ```
 
-#### Integrantes
-- Angelina De jesus Guillen Guillen
-- Emily Junieth Gomez Camargo
-- Danan Sofia Perez Martinez
-
-```
-Colegio Tibabuyes Universal Sede C - JT
-```
