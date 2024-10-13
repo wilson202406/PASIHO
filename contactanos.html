@@ -2,17 +2,21 @@
 <html lang="es-co">
 
 <head>
-  <script <script src="js/color-modes.js"></script>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <script src="js/color-modes.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
   <title>Patitas Sin Hogar</title>
 
   <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
 
-  <link href="./style/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="/style/bootstrap.min.css  " rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Favicons -->
   <!-- <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -211,7 +215,7 @@
 
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item2" style="background-image: url('./imagen/Carrusel1.png')">
+        <div class="carousel-item2" style="background-image: url('/imagen/Carrusel1.png')">
           <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true"
             preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" fill-opacity="0.5" />
@@ -229,9 +233,9 @@
 
       <!-- START THE FEATURETTES -->
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Contactanos
+      <div class="contenido">
+        <div class="form-group">
+          <h2>Contactanos
           </h2>
           <p class="lead">
             ¿Necesitas más información? Contáctanos por cualquiera de nuestros canales: correo electrónico, WhatsApp o
@@ -251,7 +255,8 @@
           <div class="divTableCell">
             <div class="divTableCell">
               <span>
-                <img decoding="async" width="40" height="40" src="./imagen/icono-whatsapp.png" alt="">
+                <img decoding="async" width="40" height="40"
+                  src="https://www.amigosdelplaneta.com/wp-content/uploads/2020/07/icono-whatsapp.png" alt="">
               </span>
             </div>
             <div>
@@ -264,7 +269,7 @@
           <div class="divTableCell">
             <div class="divTableCell">
               <span>
-                <img decoding="async" width="40" height="40" src="./imagen/mobile-phone.png" alt="">
+                <img decoding="async" width="40" height="40" src="imagen/mobile-phone.png" alt="">
               </span>
             </div>
             <div>
@@ -277,7 +282,7 @@
           <div class="divTableCell">
             <div class="divTableCell">
               <span>
-                <img decoding="async" width="40" height="40" src="./imagen/envelope.png" alt="">
+                <img decoding="async" width="40" height="40" src="imagen/envelope.png" alt="">
               </span>
             </div>
             <div>
@@ -297,31 +302,33 @@
     <hr>
     <div class="container marketing">
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Formulario
+        <div class="contenido">
+          <h2>Formulario
           </h2><br>
           <p class="lead">
-            ¿Necesitas más información? Contáctanos por cualquiera de nuestros canales: correo electrónico, WhatsApp o
-            completando nuestro formulario en línea.
+            Diligencie nuestro formulario en línea.
           </p>
-          <form action="https://formsubmit.co/dannasofiacp12@gmail.com" method="POST" class="form">
+          <form target="_blank" action="https://formsubmit.co/dannasofiacp12@gmail.com" method="POST" class="form">
+
             <div class="form-group">
-              <label for="name" class="form-label">Nombres y Apellidos:</label>
-              <input type="text" id="name" name="name" required class="form-control">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Nombres y Apellidos" required>
+                </div>
+                <div class="col">
+                  <input type="celular" name="celular" class="form-control" placeholder="celular" required>
+                </div>                
+                <div class="col">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
             </div>
             <div class="form-group">
-              <label for="email" class="form-label">Correo electrónico:</label>
-              <input type="email" id="email" name="email" 
-           required class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="message" 
-           class="form-label">Mensaje:</label>
-              <textarea id="message" name="message" cols="60" rows="10" required class="form-control"></textarea>
+              <textarea placeholder="Mensaje" id="message" name="message" rows="10" required style="height: 300px;" class="form-control"></textarea>
             </div> <br>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-lg btn-block btn-bd-primary" style="margin-left: 35%;" >Enviar</button>
           </form>
-          <script src="./js/formulario.js"></script>
+          <script src="js/formulario.js"></script>
         </div>
       </div>
 
