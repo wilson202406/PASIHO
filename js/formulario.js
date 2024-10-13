@@ -33,7 +33,7 @@ form.addEventListener('submit', (event) => {
     .then(response => {
         if (response.ok) {
             alert('Mensaje enviado correctamente');
-            window.location.href = 'contactanos.html'; // Reemplaza con la URL de tu página de contacto
+            window.location.href = 'https://wilson202406.github.io/PASIHO/'; // Reemplaza con la URL de tu página de contacto
             form.reset();
         } else {
             alert('Error al enviar el mensaje');
