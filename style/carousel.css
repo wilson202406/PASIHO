@@ -41,10 +41,10 @@ body {
   
   /* DivTable */
 .divTable{
-	display: table;
+  display: table;
   justify-content: center;
   align-items: center;
-  padding-left: 30.0rem;
+  padding-left: 20.0rem;
 
   height: 100px;
   width: 200px;
