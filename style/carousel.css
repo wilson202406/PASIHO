@@ -1,0 +1,144 @@
+/* ESTILOS GLOBAL 
+-------------------------------------------------- */
+/* Relleno debajo del pie de página y texto del cuerpo más claro */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb)); 
+    /* color: rgb(181,222,171); */
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 6rem;
+    z-index: 10;
+  }
+  
+  #concate {
+    position: absolute;
+    bottom: 13rem;
+    right: 50rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  #concate2 {
+    position: absolute;
+    bottom: 10rem;
+    right: 25rem;
+    color: white;
+
+  }  
+  
+  /* DivTable */
+.divTable{
+	display: table;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35.5rem;
+
+  height: 100px;
+  width: 200px;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 30px 40px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+
+/* 
+  .navbar  {
+    background-color: #b3c4ae !important;
+    color: black;
+  } */
+
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 25rem;
+    background-repeat: no-repeat;    
+    background-position: 100px 30px;
+    background-size: 90% 80%;
+  }
+  .carousel-item2{
+    height: 25rem;
+    background-repeat: no-repeat;    
+    background-position: 100px 30px;
+    background-size: 90% 80%;
+  }
+
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
